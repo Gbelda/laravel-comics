@@ -16,54 +16,16 @@
     <!-- /.content_section -->
     <section class="content_index">
       <ul class="index_options d-flex container">
-        <li>
-          <a href="#">
-            <div class="index_link">
-              <img src="../assets" alt="" />
-              <h5>DIGITAL COMICS</h5>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="index_link">
-              <img src="../assets/img/" alt="" />
-
-              <h5>DC MERCHANDISE</h5>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="index_link">
-              <img src="../assets/img/buy-comics-subscriptions.png" alt="" />
-
-              <h5>SUBSCRIPTION</h5>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="index_link">
-              <img
-                src="../assets/img/
-                alt=""
-                class="locator_logo"
-              />
-
-              <h5>COMIC SHOP LOCATOR</h5>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="index_link">
-              <img src="../assets/img/buy-dc-power-visa.svg" alt="" />
-
-              <h5>DC POWER VISA</h5>
-            </div>
-          </a>
-        </li>
+          @foreach($miscs as $misc)
+          <li>
+            <a href="#">
+              <div class="index_link">
+                <img src="{{$misc['img']}}" alt="" />
+                <h5>{{$misc['name']}}</h5>
+              </div>
+            </a>
+          </li>
+          @endforeach
       </ul>
     </section>
     </div>

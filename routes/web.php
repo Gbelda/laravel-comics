@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     
         $indexes = config('db.indexes');
+        $miscs = config('db.miscs');
         
 
-    return view('welcome', compact('indexes'));
+    return view('welcome', compact('indexes', 'miscs'));
 });
 
 
