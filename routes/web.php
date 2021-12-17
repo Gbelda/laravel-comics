@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    
+        $indexes = config('db.indexes');
+    
+
+    return view('welcome', compact('indexes'));
 });
+
+
+
