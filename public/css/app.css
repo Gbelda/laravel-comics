@@ -11258,50 +11258,133 @@ body {
   margin: auto;
 }
 
-.nav {
+ul {
+  padding-left: 0%;
+}
+
+header .nav {
   background-color: rgba(255, 255, 255, 0.918);
   padding: 1rem 0rem;
 }
-.nav .logo img {
+header .nav .logo img {
   width: 80px;
 }
-.nav .index {
+header .nav .index {
   width: 100%;
   margin-bottom: 0%;
   padding: 0% 2rem;
 }
-.nav .index a {
+header .nav .index a {
   text-decoration: none;
   color: #464646;
 }
-.nav .search {
+header .nav .search {
   height: 20px;
   border-bottom: 2px solid #0282F9;
 }
-.nav .search input {
+header .nav .search input {
   width: 120px;
   border: none;
 }
-.nav .search input::-moz-placeholder {
+header .nav .search input::-moz-placeholder {
   text-align: end;
 }
-.nav .search input:-ms-input-placeholder {
+header .nav .search input:-ms-input-placeholder {
   text-align: end;
 }
-.nav .search input::placeholder {
+header .nav .search input::placeholder {
   text-align: end;
 }
-.nav .search img {
+header .nav .search img {
   width: 20px;
   filter: brightness(0);
 }
-
-.additional {
+header .additional {
   height: 15px;
   background-color: #0282F9;
 }
-.additional h6 {
+header .additional h6 {
   font-size: 0.8rem;
   margin-left: 3rem;
   color: white;
+}
+
+.hero_img {
+  height: 380px;
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+}
+
+footer .ext_links {
+  background-image: url(/img/footer-bg.jpg);
+  height: 400px;
+}
+footer .ext_links .index_container {
+  padding: 2rem 0px;
+  width: 100%;
+  background-image: url(/img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 590px;
+  height: 400px;
+}
+footer .ext_links .index_container .index_section {
+  padding-right: 2rem;
+}
+footer .ext_links .main_footer {
+  justify-content: space-between;
+}
+footer .ext_links .footer_dc_logo {
+  width: 100%;
+  height: 400px;
+}
+footer .ext_links h4 {
+  color: white;
+  font-size: 1.3rem;
+}
+footer .ext_links h4,
+footer .ext_links #dc_comics {
+  padding-bottom: 1rem;
+}
+footer .ext_links li {
+  list-style: none;
+}
+footer .ext_links li a {
+  font-size: 0.9rem;
+  color: #888888;
+  text-decoration: none;
+}
+footer .socials {
+  height: 120px;
+  background-color: #303030;
+}
+footer .socials .container {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer .socials .signup_button {
+  width: 50%;
+}
+footer .socials .signup_button button {
+  font-size: 1.1rem;
+  color: white;
+  background: none;
+  border: 2px solid #0282F9;
+  padding: 1rem;
+}
+footer .socials .signup_button button:hover {
+  cursor: pointer;
+}
+footer .socials .social_links {
+  justify-content: end;
+  width: 50%;
+}
+footer .socials .social_links a {
+  padding-left: 2rem;
+}
+footer .socials .social_links h4 {
+  line-height: 39px;
+  color: #0282F9;
+  font-size: 1.4rem;
 }

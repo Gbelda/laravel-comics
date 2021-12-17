@@ -9,8 +9,19 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/css/app.css">
     </head>
+
     <body>
+
         @include('partials.header')
+        {{-- ./SITE_HEADER --}}
+
+        <main id="site_main">
+            <div class="hero_img"></div>
+
+            @yield('content')
+        </main>
+
+        @include('partials.footer')
 
     </body>
 </html>
