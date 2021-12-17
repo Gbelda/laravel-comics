@@ -6,11 +6,6 @@
 
         <title>DC | @yield('page_title')</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Armata&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
-
         <!-- Styles -->
         <link rel="stylesheet" href="/css/app.css">
     </head>
