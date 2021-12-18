@@ -1,13 +1,26 @@
 @extends('layouts.app')
 
+@section('page-css')
+    
+<link rel="stylesheet" href="/css/homepage.css">
+
 @section('content')
-    <div class="div">
-            <section class="content_section container">
+    <section class="content_section container">
       <div class="section_title">
         <h3>CURRENT SERIES</h3>
       </div>
       <div class="row comic space_evenly">
-
+        @foreach ($comics as $comic)
+          <div class="comic col-2">
+            <div class="comic_image">
+              <img src="{{$comic['thumb']}}" alt="">
+            </div>
+            <h3 class="title">
+              {{$comic['series']}}
+            </h3>
+          </div>
+            
+        @endforeach
       </div>
       <div class="load">
         <h4>LOAD MORE</h4>
@@ -21,7 +34,7 @@
             <a href="#">
               <div class="index_link">
                 <img src="{{$misc['img']}}" alt="" />
-                <h5>{{$misc['name']}}</h5>
+                <h5>{{strtoupper($misc['name'])}}</h5>
               </div>
             </a>
           </li>

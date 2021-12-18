@@ -1,0 +1,85 @@
+$text_primary_color: white;
+$nav_text_primary_color: #464646;
+$highlight_primary_color: #0282F9;
+$content_bg_color: #1C1C1C;
+$social-bg-color: #303030;
+
+#site_main{
+    background-color: $content_bg_color;
+}
+
+.comic {
+  margin: 1rem 0%;
+  .comic_image {
+    width: 200px;
+    height: 190px;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .title {
+    font-size: 1.5rem;
+    width: 200px;
+    margin: 1rem 0%;
+  }
+}
+  
+  .content_section {
+    color: $text_primary_color;
+    padding: 3rem 0px;
+
+    .section_title {
+      width: 220px;
+      background-color: $highlight_primary_color;
+      margin-top: -4.5rem;
+      margin-bottom: 1rem;
+      h3 {
+        padding: 0.5rem 1rem;
+        text-align: center;
+      }
+    }
+
+    .load {
+      h4 {
+        margin: auto;
+        width: 200px;
+        background-color: $highlight_primary_color;
+        text-align: center;
+        padding: 0.5rem 0px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content_index {
+    background-color: $highlight_primary_color;
+    padding: 3rem 0px;
+
+    .index_options {
+      justify-content: space-around;
+      align-items: center;
+
+      h5 {
+        color: $text_primary_color;
+        font-weight: normal;
+        padding-left: 10px;
+      }
+    }
+
+    .index_link {
+      display: flex;
+      align-items: center;
+    }
+
+    .locator_logo {
+      width: 30px;
+    }
+
+    img {
+      width: 40px;
+    }
+  }

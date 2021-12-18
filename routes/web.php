@@ -17,9 +17,10 @@ Route::get('/', function () {
     
         $indexes = config('db.indexes');
         $miscs = config('db.miscs');
+        $comics = config('comics');
         
 
-    return view('welcome', compact('indexes', 'miscs'));
+    return view('welcome', compact('indexes', 'miscs', 'comics'));
 });
 
 

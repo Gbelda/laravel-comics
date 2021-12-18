@@ -39,7 +39,7 @@ return [
         
         [
             'name' => 'dc power visa',
-            'img' => '/img/img/buy-dc-power-visa.svg',
+            'img' => '/img/buy-dc-power-visa.svg',
         ],
         
     
