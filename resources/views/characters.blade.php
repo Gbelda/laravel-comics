@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page_title', 'Characters')
+
 @section('page-css')
 
     <link rel="stylesheet" href="/css/homepage.css">
