@@ -49,6 +49,7 @@
 
 .main_content{
 
+    margin-bottom: 4rem;
     
     .comic_title{
         color: $comic_title_color;
@@ -57,7 +58,7 @@
 
     }
 
-    .info{
+    .price_info{
         width: 100%;
         background-color: $status_available_color;
         height: 40px;
@@ -67,6 +68,7 @@
         h6{
             margin: 0;
             font-weight: 600;
+            font-size: .95rem;
         }
 
         .status{
@@ -88,6 +90,20 @@
         }
     }
 
-    
+    .comic_text{
+        font-size: 1rem;
+
+    }
+
+    .advert{
+        img{
+            width: 100%;
+        }
+
+        h6{
+            font-weight: 600;
+            color: $nav_text_primary_color;
+        }
+    }
 
 }

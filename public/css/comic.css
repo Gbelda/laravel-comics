@@ -38,31 +38,45 @@
   padding: 2px 0%;
 }
 
+.main_content {
+  margin-bottom: 4rem;
+}
 .main_content .comic_title {
   color: #003F5E;
   font-weight: 600;
   font-size: 1.7rem;
 }
-.main_content .info {
+.main_content .price_info {
   width: 100%;
   background-color: #55BA59;
   height: 40px;
   border-bottom: 0.5px solid #505050;
   margin-bottom: 1rem;
 }
-.main_content .info h6 {
+.main_content .price_info h6 {
   margin: 0;
   font-weight: 600;
+  font-size: 0.95rem;
 }
-.main_content .info .status h6 {
+.main_content .price_info .status h6 {
   color: #BAFD93;
 }
-.main_content .info .status .price {
+.main_content .price_info .status .price {
   color: white;
 }
-.main_content .info .availability {
+.main_content .price_info .availability {
   border-left: 0.5px solid #505050;
 }
-.main_content .info .availability h6 {
+.main_content .price_info .availability h6 {
   color: white;
+}
+.main_content .comic_text {
+  font-size: 1rem;
+}
+.main_content .advert img {
+  width: 100%;
+}
+.main_content .advert h6 {
+  font-weight: 600;
+  color: #464646;
 }
