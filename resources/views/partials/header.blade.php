@@ -20,8 +20,8 @@
             <ul class="index d-flex list-unstyled align-items-center justify-content-evenly">
                 @foreach ($indexes as $index)
                     <li class="">
-                        <a href="{{ $index }}"
-                            class="{{ Route::currentRouteName() === $index ? 'active' : '' }}">
+                        <a href="{{ route("$index") }}"
+                            id="{{ Route::currentRouteName() === $index ? 'active' : '' }}">
                             {{ strtoupper($index) }}
                         </a>
                     </li>

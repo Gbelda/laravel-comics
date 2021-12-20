@@ -11310,8 +11310,9 @@ header .nav .search img {
   width: 20px;
   filter: brightness(0);
 }
-header .nav .active {
+header .nav #active {
   border-bottom: 4px solid #0282F9;
+  color: #0282F9;
 }
 header .additional {
   height: 15px;
@@ -11327,6 +11328,7 @@ header .additional h6 {
   height: 380px;
   background-image: url(../img/jumbotron.jpg);
   background-size: cover;
+  background-position-x: center;
 }
 
 footer .ext_links {

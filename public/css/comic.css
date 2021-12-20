@@ -1,0 +1,68 @@
+.highlight_bg {
+  height: 60px;
+  background-color: #0282F9;
+}
+
+.content_container {
+  width: 55%;
+  margin: auto;
+  margin-top: -17.5rem;
+}
+
+.poster {
+  border: 1px solid white;
+  width: 175px;
+  position: relative;
+  margin-bottom: 7rem;
+}
+.poster img {
+  width: 100%;
+}
+.poster .sticker,
+.poster .gallery {
+  font-size: 0.8rem;
+  position: absolute;
+  color: white;
+  margin: 0;
+  background-color: #00A9D9;
+}
+.poster .sticker {
+  top: 0%;
+  left: 0%;
+  padding: 0% 5px;
+}
+.poster .gallery {
+  width: 100%;
+  bottom: 0%;
+  text-align: center;
+  padding: 2px 0%;
+}
+
+.main_content .comic_title {
+  color: #003F5E;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.main_content .info {
+  width: 100%;
+  background-color: #55BA59;
+  height: 40px;
+  border-bottom: 0.5px solid #505050;
+  margin-bottom: 1rem;
+}
+.main_content .info h6 {
+  margin: 0;
+  font-weight: 600;
+}
+.main_content .info .status h6 {
+  color: #BAFD93;
+}
+.main_content .info .status .price {
+  color: white;
+}
+.main_content .info .availability {
+  border-left: 0.5px solid #505050;
+}
+.main_content .info .availability h6 {
+  color: white;
+}

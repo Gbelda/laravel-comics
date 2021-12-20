@@ -84,8 +84,9 @@ header{
 
 
 
-        .active{
+        #active{
           border-bottom: 4px solid $highlight_primary_color;
+          color: $highlight_primary_color;
         }
     }
     
@@ -107,6 +108,7 @@ header{
     height: 380px;
     background-image: url(../img/jumbotron.jpg);
     background-size: cover;
+    background-position-x: center;
 }
 
 footer{
