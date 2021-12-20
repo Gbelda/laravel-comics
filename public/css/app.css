@@ -11282,6 +11282,12 @@ header .nav .index {
 header .nav .index a {
   text-decoration: none;
   color: #464646;
+  padding-bottom: 2.8rem;
+  font-weight: 600;
+}
+header .nav .index a:hover {
+  color: #0282F9;
+  border-bottom: 4px solid #0282F9;
 }
 header .nav .search {
   height: 20px;
@@ -11303,6 +11309,9 @@ header .nav .search input::placeholder {
 header .nav .search img {
   width: 20px;
   filter: brightness(0);
+}
+header .nav .active {
+  border-bottom: 4px solid #0282F9;
 }
 header .additional {
   height: 15px;

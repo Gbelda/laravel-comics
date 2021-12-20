@@ -50,6 +50,13 @@ header{
             a{
                 text-decoration: none;
                 color: $nav_text_primary_color;
+                padding-bottom: 2.8rem;
+                font-weight: 600;
+
+                &:hover{
+                  color: $highlight_primary_color;
+                  border-bottom: 4px solid $highlight_primary_color;
+                }
         
             }
         }
@@ -73,6 +80,12 @@ header{
                 width: 20px;
                 filter: brightness(0);
             }
+        }
+
+
+
+        .active{
+          border-bottom: 4px solid $highlight_primary_color;
         }
     }
     
