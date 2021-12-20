@@ -33,77 +33,96 @@ Route::get('/comics', function () {
     return view('welcome', compact('indexes', 'miscs', 'comics'));
 }) ->name('comics');
 
+    /*************************  ./COMICS/LANDING PAGE ***************************/
+
 Route::get('/characters', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Characters Page');
+    return view('characters', compact('indexes'));
 }) ->name('characters');
+
+/*************************  ./CHARACTERS PAGE ***************************/
 
 Route::get('/movies', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Movies Page');
+    return view('movies', compact('indexes'));
 }) ->name('movies');
+
+/*************************  ./MOVIES PAGE ***************************/
 
 Route::get('/tv', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Tv Page');
+    return view('tv', compact('indexes'));
 }) ->name('tv');
+
+/*************************  ./TV PAGE ***************************/
 
 Route::get('/games', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Games Page');
+    return view('games', compact('indexes'));
 }) ->name('games');
+
+/*************************  ./GAMES PAGE ***************************/
 
 Route::get('/collectibles', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Collectibles Page');
+    return view('collectibles', compact('indexes'));
 }) ->name('collectibles');
+
+/*************************  ./COLLECTIBLES PAGE ***************************/
 
 Route::get('/videos', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Videos Page');
+    return view('videos', compact('indexes'));
 }) ->name('videos');
+
+/*************************  ./VIDEOS PAGE ***************************/
 
 Route::get('/fans', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Fans Page');
+    return view('fans', compact('indexes'));
 }) ->name('fans');
+
+/*************************  ./FANS PAGE ***************************/
 
 Route::get('/news', function () {
     
         $indexes = config('db.indexes');
         
-    return ('News Page');
+    return view('news', compact('indexes'));
 }) ->name('news');
+
+/*************************  ./NEWS PAGE ***************************/
 
 Route::get('/shop', function () {
     
         $indexes = config('db.indexes');
         
-    return ('Shop Page');
+    return view('shop', compact('indexes'));
 }) ->name('shop');
+
+/*************************  ./SHOP PAGE ***************************/
 
 Route::get('comics/{id}', function ($id) {
     $indexes = config('db.indexes');
     $comics = config('comics');
     $subIndexes = config('db.subIndexes');
 
-    //check if id is a number
-    //check if value is >= 0
-    //check if id < array.length
     $comic = $comics[$id];
     return view('comics.show', compact('comic', 'indexes', 'subIndexes'));
 })->name('comic');
+
+/*************************  ./SPECIFIC COMIC PAGE ***************************/
