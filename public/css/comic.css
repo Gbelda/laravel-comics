@@ -125,3 +125,23 @@
 .specifics .highlight {
   color: #00A9D9;
 }
+
+.subIndex {
+  background-color: #F6F6F6;
+  border-right: 0.5px solid #cfcfcf;
+}
+.subIndex .index {
+  padding: 1rem;
+  border-right: 0.5px solid #cfcfcf;
+}
+.subIndex .index:first-child {
+  border-left: 0.5px solid #cfcfcf;
+}
+.subIndex h6 {
+  font-size: 0.8rem;
+  color: gray;
+}
+.subIndex .logo img {
+  max-height: 40px;
+  filter: contrast(0.5);
+}

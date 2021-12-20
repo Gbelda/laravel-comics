@@ -99,10 +99,11 @@ Route::get('/shop', function () {
 Route::get('comics/{id}', function ($id) {
     $indexes = config('db.indexes');
     $comics = config('comics');
+    $subIndexes = config('db.subIndexes');
 
     //check if id is a number
     //check if value is >= 0
     //check if id < array.length
     $comic = $comics[$id];
-    return view('comics.show', compact('comic', 'indexes'));
+    return view('comics.show', compact('comic', 'indexes', 'subIndexes'));
 })->name('comic');

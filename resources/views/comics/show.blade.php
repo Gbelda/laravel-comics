@@ -2,12 +2,6 @@
 
 $date = date_create($comic['sale_date']);
 
-$subIndex = [
-    [
-        'name' => 'digital comics'
-        'img' => ''
-    ]
-];
 ?>
 
 @extends('layouts.app')
@@ -65,7 +59,7 @@ $subIndex = [
 
     </div>
 
-    <div class="specifics ">
+    <div class="specifics">
 
         <div class="content_container d-flex justify-content-between">
 
@@ -134,6 +128,22 @@ $subIndex = [
 
         </div>
     </div>
+
+    <div class="subindex">
+        <div class="content_container d-flex ">
+            @foreach ($subIndexes as $subIndex)
+                <div class="index col-3 d-flex justify-content-between">
+                    <h6>
+                        {{ strtoupper($subIndex['name']) }}
+                    </h6>
+                    <div class="logo">
+                        <img src="{{ asset($subIndex['img']) }}" alt="">
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
 
 
 

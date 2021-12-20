@@ -44,4 +44,23 @@ return [
         
     
     ],
+
+    'subIndexes' => [
+        [
+            'name' => 'digital comics',
+            'img' => '/img/buy-comics-digital-comics.png',
+        ],
+        [
+            'name' => 'shop dc',
+            'img' => '/img/buy-comics-subscriptions.png',
+        ],
+        [
+            'name' => 'comic shop locator',
+            'img' => '/img/buy-comics-shop-locator.png',
+        ],
+        [
+            'name' => 'subscriptions',
+            'img' => '/img/buy-comics-merchandise.png',
+        ],
+    ],
 ];

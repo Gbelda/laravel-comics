@@ -162,3 +162,30 @@
 
 
 }
+
+.subIndex{
+    background-color: $comic_specs_bg;
+    border-right: .5px solid rgb(207, 207, 207);
+    
+    .index{
+        padding:  1rem;
+        border-right: .5px solid rgb(207, 207, 207);
+        
+        &:first-child{
+            border-left: .5px solid rgb(207, 207, 207);
+        }
+
+    }
+
+    h6{
+        font-size: .8rem;
+        color: gray;
+    }
+
+    .logo{
+        img{
+            max-height: 40px;
+            filter: contrast(0.5);
+        }
+    }
+}
