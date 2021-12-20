@@ -6,6 +6,9 @@
 .content_container {
   width: 55%;
   margin: auto;
+}
+
+.content_header {
   margin-top: -17.5rem;
 }
 
@@ -84,4 +87,29 @@
 .specifics {
   background-color: #F6F6F6;
   border-top: 1px solid #cfcfcf;
+}
+.specifics h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #003F5E;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+.specifics h6 {
+  color: #003F5E;
+}
+.specifics .artists,
+.specifics .writers {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.specifics .artists a,
+.specifics .writers a {
+  color: #00A9D9;
+}
+.specifics .art,
+.specifics .writer {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 1rem 0%;
 }

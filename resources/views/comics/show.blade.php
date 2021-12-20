@@ -7,7 +7,7 @@
 
     <div class="highlight_bg"></div>
 
-    <div class="content_container">
+    <div class="content_container content_header">
 
         <div class="poster">
             <img src="{{ $comic['thumb'] }}" alt="">
@@ -53,41 +53,45 @@
 
     </div>
 
-    <div class="specifics d-flex justify-content-between">
+    <div class="specifics ">
 
-        <div class="talent col-6">
+        <div class="content_container d-flex justify-content-between">
 
-            <h2>Talent</h2>
-            <div class="art d-flex">
-                <h6 class="col-4">Art by:</h6>
-                <div class="artists col-8">
-                    @foreach ($comic['artists'] as $artist)
-                        <a href="#">{{ $artist }}</a>
-                        @if (!$loop->last)
-                            ,
-                        @endif
-                    @endforeach
+            <div class="talent col-6">
+
+                <h2>Talent</h2>
+                <div class="art d-flex">
+                    <h6 class="col-4">Art by:</h6>
+                    <div class="artists col-8">
+                        @foreach ($comic['artists'] as $artist)
+                            <a href="#">{{ $artist }}</a>
+                            @if (!$loop->last)
+                                ,
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+
+                <div class="writer d-flex">
+                    <h6 class="col-4">Written by:</h6>
+                    <div class="writers col-8">
+                        @foreach ($comic['writers'] as $writer)
+                            <a href="#">{{ $writer }}</a>
+                            @if (!$loop->last)
+                                ,
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
             </div>
 
-            <div class="writer d-flex">
-                <h6 class="col-4">Written by:</h6>
-                <div class="writers col-8">
-                    @foreach ($comic['writers'] as $writer)
-                        <a href="#">{{ $writer }}</a>
-                        @if (!$loop->last)
-                            ,
-                        @endif
-                    @endforeach
-                </div>
+
+            <div class="specs col-5">
+                <h2>
+                    Specs
+                </h2>
             </div>
-        </div>
 
-
-        <div class="specs col-5">
-            <h2>
-                Specs
-            </h2>
         </div>
     </div>
 
