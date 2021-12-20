@@ -8,16 +8,12 @@
 
 }
 
-$text_primary_color: white;
-$nav_text_primary_color: #464646;
-$highlight_primary_color: #0282F9;
-$content_bg_color: #1C1C1C;
-$social-bg-color: #303030;
+@import 'partials/variables';
 
 
 body{
     // font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: sans-serif;
 }
 
 .container_main{
@@ -28,6 +24,10 @@ body{
 ul{
     padding-left: 0%;
     list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 header{
@@ -175,7 +175,7 @@ footer{
     width: 50%;
 
     a {
-      padding-left: 2rem;
+      margin-left: 2rem;
     }
 
     h4 {

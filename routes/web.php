@@ -21,7 +21,20 @@ Route::get('/', function () {
         
 
     return view('welcome', compact('indexes', 'miscs', 'comics'));
-});
+}) ->name('comics');
 
 
 
+Route::get('comics/{id}', function ($id) {
+    $indexes = config('db.indexes');
+    $comics = config('comics');
+
+    if (is_numeric($id)) {
+        # code...
+    }
+    //check if id is a number
+    //check if value is >= 0
+    //check if id < array.length
+    $comic = $comics[$id];
+    return view('comics.show', compact('comic', 'indexes'));
+})->name('comic');

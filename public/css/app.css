@@ -11250,7 +11250,7 @@ textarea.form-control-lg {
 }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: sans-serif;
 }
 
 .container_main {
@@ -11261,6 +11261,10 @@ body {
 ul {
   padding-left: 0%;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .nav {
@@ -11382,7 +11386,7 @@ footer .socials .social_links {
   width: 50%;
 }
 footer .socials .social_links a {
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
 footer .socials .social_links h4 {
   line-height: 39px;
