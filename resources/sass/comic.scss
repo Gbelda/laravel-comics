@@ -113,8 +113,11 @@
 }
 
 .specifics{
+    padding-bottom: 5rem;
     background-color: $comic_specs_bg;
     border-top: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(207, 207, 207);
+
 
     h2{
         font-size: 1.4rem;
@@ -127,6 +130,7 @@
 
     h6{
         color: $comic_title_color;
+        margin: 0;
     }
     
     .artists,
@@ -135,14 +139,25 @@
         line-height: 1rem;
 
         a{
-            color: #00A9D9;
+            color: $comic_highlight_color
         }
     }
 
     .art,
-    .writer{
+    .writer,
+    .series,
+    .pricing,
+    .release{
         border-bottom: 1px solid rgb(209, 209, 209);
-        padding: 1rem 0%;
+        padding: .5rem 0%;
+    }
+
+    span{
+                font-size: .8rem;
+    }
+
+    .highlight{
+        color: $comic_highlight_color
     }
 
 

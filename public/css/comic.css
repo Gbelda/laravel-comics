@@ -85,8 +85,10 @@
 }
 
 .specifics {
+  padding-bottom: 5rem;
   background-color: #F6F6F6;
   border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
 }
 .specifics h2 {
   font-size: 1.4rem;
@@ -98,6 +100,7 @@
 }
 .specifics h6 {
   color: #003F5E;
+  margin: 0;
 }
 .specifics .artists,
 .specifics .writers {
@@ -109,7 +112,16 @@
   color: #00A9D9;
 }
 .specifics .art,
-.specifics .writer {
+.specifics .writer,
+.specifics .series,
+.specifics .pricing,
+.specifics .release {
   border-bottom: 1px solid #d1d1d1;
-  padding: 1rem 0%;
+  padding: 0.5rem 0%;
+}
+.specifics span {
+  font-size: 0.8rem;
+}
+.specifics .highlight {
+  color: #00A9D9;
 }

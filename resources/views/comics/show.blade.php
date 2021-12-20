@@ -1,3 +1,15 @@
+<?php
+
+$date = date_create($comic['sale_date']);
+
+$subIndex = [
+    [
+        'name' => 'digital comics'
+        'img' => ''
+    ]
+];
+?>
+
 @extends('layouts.app')
 
 @section('page-css')
@@ -60,6 +72,7 @@
             <div class="talent col-6">
 
                 <h2>Talent</h2>
+
                 <div class="art d-flex">
                     <h6 class="col-4">Art by:</h6>
                     <div class="artists col-8">
@@ -90,10 +103,38 @@
                 <h2>
                     Specs
                 </h2>
+
+                <div class="series d-flex">
+                    <h6 class="col-4">
+                        Series:
+                    </h6>
+                    <span class="col-8 highlight">
+                        {{ strtoupper($comic['series']) }}
+                    </span>
+                </div>
+
+                <div class="pricing d-flex">
+                    <h6 class="col-4">
+                        U.S. Price
+                    </h6>
+                    <span class="col-8">
+                        {{ $comic['price'] }}
+                    </span>
+                </div>
+
+                <div class="release d-flex">
+                    <h6 class="col-4">
+                        On Sale Date:
+                    </h6>
+                    <span class="col-8">
+                        {{ date_format($date, 'M d Y') }}
+                    </span>
+                </div>
             </div>
 
         </div>
     </div>
+
 
 
 @endsection
