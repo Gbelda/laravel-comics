@@ -1,1 +1,1 @@
-DC Comics webpage clone using Laravel. Comics page + specific comic page.
+# DC Comics webpage clone using Laravel. Comics page + specific comic page.
